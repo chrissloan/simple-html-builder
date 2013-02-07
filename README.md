@@ -14,8 +14,8 @@ Create simple HTML static pages using some popular buzz words.
 ## Setup
 
 1. Clone and `cd` into directory; allow rvmrc do it's thing
-2. $ bundle
-3. $ bundle execute guard start (or just `guard`)
+2. $ `bundle`
+3. $ `bundle execute guard start` (or just $ `guard`)
 
 ## Lay-o-land
 
