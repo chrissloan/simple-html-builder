@@ -1,0 +1,23 @@
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/typography";
+
+
+@import "sprites/*.png";
+@include all-sprites-sprites(true, 'spt');
+
+.spt {
+  display: inline;
+  @include inline-block;
+  zoom:1;
+  &.hide-text {
+    text-indent: -9999px; 
+  } 
+}
+
+.with-icon{
+  .icn{
+    margin-right: 5px;  
+    margin-top: -3px;
+  }  
+}

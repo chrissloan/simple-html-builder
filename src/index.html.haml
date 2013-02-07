@@ -1,0 +1,20 @@
+!!! 5
+%html.no-js{ :lang => "en" }
+  %head
+    %meta{ :charset => "utf-8" }/
+    %meta{ :name => "description", :content => "A simple static HTML page generator" }/
+    %meta{ :name => 'keywords', :content => "simple, html, static, page, generator" }/
+    %meta{ :name => "author", :content => "Chris Sloan" }/
+    %meta{ :name => "copyright", :content => "#{Time.now.year} Chris Sloan" }/
+
+    %title Simple HTML Static Page Generator
+
+    %link{:href => "stylesheets/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}/
+    /[if IE]
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  %body
+
+    This is an example file.
+
+    %script{src: 'javascripts/application.js'}
