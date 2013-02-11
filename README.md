@@ -21,8 +21,10 @@ Create simple HTML static pages using some popular buzz words.
 
 * Edit files in the **/src** folder
 * Sprite image files can be dropped into the **public/images/sprites** directory
-* Sprites are named with a class: .spt-NAMEOFFILE
-* All files from src/ will be generated directly into the **public** folder while Guard is watching
+* Sprites are named with a class: **.spt-NAMEOFFILE**
+* All files from **src/** will be generated directly into the **public** folder while Guard is watching
+* Replace the Google Analytic Tracking Account number with your number if needed; otherwise delete it
+* Change the meta tags as needed
 
 
 ### Notabene
