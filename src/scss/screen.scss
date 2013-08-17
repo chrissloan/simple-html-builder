@@ -1,7 +1,25 @@
 @import "compass/reset";
 @import "compass/utilities";
 @import "compass/typography";
+@import "susy";
 
+// Responsive grid structure setup
+$total-columns  : 4;             
+$column-width   : 4em;           
+$gutter-width   : 1em;           
+$grid-padding   : $gutter-width; 
+
+$break-tablet   : 8;
+$break-desktop  : 12;
+
+
+@include at-breakpoint($break-tablet) {
+  // Tablet width styles
+}
+
+@include at-breakpoint($break-desktop) {
+  // Desktop width styles
+}
 
 @import "sprites/*.png";
 @include all-sprites-sprites(true, 'spt');
