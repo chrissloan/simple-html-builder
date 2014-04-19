@@ -1,24 +1,40 @@
-@import "compass/reset";
-@import "compass/utilities";
-@import "compass/typography";
-@import "susy";
+@import 'compass';
+@import 'breakpoint';
+@import 'susy';
 
-// Responsive grid structure setup
-$total-columns  : 4;             
-$column-width   : 4em;           
-$gutter-width   : 1em;           
-$grid-padding   : $gutter-width; 
+$legacy-support-for-ie        : true;
+$experimental-support-for-svg : true;
 
-$break-tablet   : 8;
-$break-desktop  : 12;
+// Grid Settings
+//////////////////////////////////////////////////
+$susy    : (column-width : 4em, global-box-sizing : border-box);
+$mobile  : layout(4);
+$tablet  : layout(8);
+$desktop : layout(12);
 
+$max-width-mobile: 19em;
+$max-width-tablet: 39em;
+$max-width-desktop: 59em;
 
-@include at-breakpoint($break-tablet) {
-  // Tablet width styles
+@include susy-breakpoint($max-width-mobile, $mobile) {
+  // Mobile width styles
+  body{
+    background: red;
+  }
 }
 
-@include at-breakpoint($break-desktop) {
+@include susy-breakpoint($max-width-tablet, $tablet) {
+  // Tablet width styles
+  body{
+    background: blue;
+  }
+}
+
+@include susy-breakpoint($max-width-desktop, $desktop) {
   // Desktop width styles
+  body{
+    background: green;
+  }
 }
 
 @import "sprites/*.png";
