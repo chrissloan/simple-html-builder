@@ -5,8 +5,8 @@ Create simple HTML static pages using some popular buzz words.
 
 ## Uses:
 
-* RVM (ruby-2.0.0) => Must be installed
-* Compass (with Susy for responsive layout)
+* RVM (ruby-2.0.0) or rbenv (ruby 2.0.0)
+* Compass (with Susy 2.0.0 for responsive layout)
 * Haml
 * Coffeescript
 * Guard (to compile all this stuff)
